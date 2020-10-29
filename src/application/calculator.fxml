@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="324.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <AnchorPane layoutX="-86.0" layoutY="-179.0" prefHeight="200.0" prefWidth="200.0" />
+      <Text layoutX="141.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Device Width:" wrappingWidth="102.6708984375" />
+      <TextField fx:id="deviceWidth" layoutX="253.0" layoutY="37.0" onAction="#setDeviceWidth" prefHeight="31.0" prefWidth="89.0" />
+      <TextField fx:id="deviceHeight" layoutX="477.0" layoutY="37.0" onAction="#setDeviceHeight" prefHeight="31.0" prefWidth="89.0" />
+      <Text layoutX="365.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Device Height:" wrappingWidth="102.6708984375" />
+      <TextField fx:id="itemWidth" layoutX="154.0" layoutY="132.0" onAction="#calculatePrefWidth" prefHeight="31.0" prefWidth="89.0" />
+      <Text layoutX="30.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preffered Width:" wrappingWidth="123.6708984375" />
+      <Text fx:id="deviceWidthText" layoutX="281.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.0" wrappingWidth="59.6708984375" />
+      <Text layoutX="257.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/" wrappingWidth="16.6708984375" />
+      <Text layoutX="350.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=" wrappingWidth="16.6708984375" />
+      <Text layoutX="350.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=" wrappingWidth="16.6708984375" />
+      <Text layoutX="257.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/" wrappingWidth="16.6708984375" />
+      <Text fx:id="deviceHeightText" layoutX="281.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.0" wrappingWidth="59.6708984375" />
+      <Text layoutX="30.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preffered Height:" wrappingWidth="123.6708984375" />
+      <TextField fx:id="itemHeight" layoutX="154.0" layoutY="180.0" onAction="#calculatePrefHeight" prefHeight="31.0" prefWidth="89.0" />
+      <Button layoutX="380.0" layoutY="238.0" mnemonicParsing="false" onAction="#onReset" prefHeight="51.0" prefWidth="186.0" text="RESET" />
+      <Text layoutX="165.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="item size" wrappingWidth="67.6708984375" />
+      <Text layoutX="259.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="device size" wrappingWidth="80.6708984375" />
+      <TextField fx:id="prefWidth" editable="false" layoutX="380.0" layoutY="132.0" prefHeight="31.0" prefWidth="186.0" />
+      <TextField fx:id="prefHeight" editable="false" layoutX="380.0" layoutY="180.0" prefHeight="31.0" prefWidth="186.0" />
+   </children>
+</AnchorPane>
